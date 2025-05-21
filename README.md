@@ -1,11 +1,29 @@
-# Proyecto 1: Word counting using Python
+# Proyecto 5 : Data Classification using Naive Bayes and kNN
 
-## Parallelism and Distributed computing
+### A note on the dataset: 
 
-### Notes:
+We are working with 27 out of 70 features from the original dataset.
 
-`MapReduce.py` is the working file.
+Please, **please** document(comment) your code and use standard notation for all variables. 
 
-- Counting is working and being parallelized correctly; however, a method must be implemented to show the parallelism graphically.
-- Implement checkpoints to keep track of each step of the process. For example, prompt "Continue? Y/N" after split, map, and reduce steps. This way, every part of the process is explicitly demonstrated as functional.
-- Consider making it truly distributed computing, perhaps using your computers as a cluster.
+## Data Preprocessing (James)
+
+- Min-max normalization of the selected 27 features.
+- Verifying the integrity of the normalized dataset.
+
+## Stratified 10-Fold Cross-Validation (Pending)
+
+- Write a briefing on how the stratified 10-fold cross-validation work. 
+- Implement this on the dataset. 
+
+## Naive Bayes Classifier (Pending)
+
+- Implement the Naive Bayes classifier. 
+- Apply the classifier using the stratified 10-fold cross-validation scheme.
+- Calculate the required metrics (ACC, PRE, REC, AUC)
+
+## k-Nearest Neighbors Classifier (Nicole)
+
+- Implement the classifier with Euclidean and Manhattan distance measures.
+- Optimize k in the interval [1,15] considering only odd numbers.
+- Calculate the required metrics (ACC, PRE, REC, AUC)
